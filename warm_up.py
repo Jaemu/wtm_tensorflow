@@ -35,6 +35,6 @@ with tf.Graph().as_default() as g:
     init = tf.initialize_all_variables()
     with tf.Session() as sess:
         sess.run(init)
-        for step in range(10):
+        for step in xrange(10):
             sess.run(assign_op)
-            print(sess.run(fib_sequence))
+            print(sess.run(fib_sequence)[1])
