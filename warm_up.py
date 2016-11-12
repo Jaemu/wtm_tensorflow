@@ -20,6 +20,7 @@ with tf.Graph().as_default() as g:
     # You'll need to make sure you specify a 2D tensor of shape 2x1,
     # not a 1D tensor. See fib_matrix above (a 2x2 2D tensor) to guide
     # you.
+    # Stores first two values of the fibonacci sequence
     fib_sequence = tf.Variable([[0.0],[1.0]])
     
     # Step 2.
